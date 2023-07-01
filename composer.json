@@ -1,5 +1,5 @@
 {
-  "name": "payprocessing/atol-sdk-api-v5",
+  "name": "telegins/atol-sdk-api-v5",
   "description": "Atol.online SDK Version 5",
   "require": {
     "php": ">=5.5",
