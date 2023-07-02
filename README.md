@@ -1,21 +1,21 @@
 Platron Atol SDK
 ===============
-## Установка
+## Install
 
-Проект предполагает установку с использованием composer
-<pre><code>composer require payprocessing/atol-sdk-api-v5</pre></code>
+The project involves installation using composer
+<pre><code>composer require telegins/atol-sdk-api-v5</pre></code>
 
-## Тесты
-Для работы тестов необходим PHPUnit, для его установки необходимо выполнить команду
+## Tests
+PHPUnit is required for the tests to work, to install it, you need to run the command
 ```
 composer require phpunit/phpunit
 ```
-Для того, чтобы запустить интеграционные тесты нужно скопировать файл tests/integration/MerchantSettings.php.sample удалив 
-из названия расширение .sample и вставив настройки магазина. После выполнить команду из корня проекта
+In order to run the integration tests, you need to copy the file `tests/integration/MerchantSettings.php.sample` as
+`tests/integration/MerchantSettings.php` Execute the command from the root of the project
 ```
 vendor/bin/phpunit vendor/payprocessing/atol-online/tests/integration
 ```
 
-## Примеры использования
+## Examples
 
-Можно найти в интеграционных тестах tests/integration
+You can find examples here `tests/integration`
