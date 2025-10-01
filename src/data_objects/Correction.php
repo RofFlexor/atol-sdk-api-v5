@@ -33,6 +33,7 @@ class Correction extends BaseDataObject
 		$this->company = $company;
 		$this->correction_info = $correctionInfo;
 		$this->addPayment($payment);
+        $this->vats = [];
 		foreach ($items as $item) {
 			$this->addItem($item);
 		}
