@@ -24,6 +24,8 @@ class Receipt extends BaseDataObject
 	protected $additional_user_props;
 	/** @var SectoralCheckProps[] */
 	private $sectoralCheckProps;
+    /** @var bool */
+    protected $internet = true;
 
 	/**
 	 * Document constructor.
@@ -143,6 +145,8 @@ class Receipt extends BaseDataObject
 				$params['sectoral_check_props'][] = $sectoralCheckProp->getParameters();
 			}
 		}
+
+        $params['internet'] = $this->internet;
 
 		return $params;
 	}

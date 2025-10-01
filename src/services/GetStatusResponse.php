@@ -27,6 +27,8 @@ class GetStatusResponse extends BaseServiceResponse
 	public $ecr_registration_number;
 	/** @var int */
 	public $fiscal_document_attribute;
+    /** @var string */
+    public $ofd_receipt_url;
 
 	/**
 	 * @inheritdoc
