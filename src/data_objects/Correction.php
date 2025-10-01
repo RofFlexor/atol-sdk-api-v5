@@ -19,22 +19,20 @@ class Correction extends BaseDataObject
 	/** @var Item[] */
 	protected $items;
 
-	/**
-	 * Correction constructor.
-	 * @param CorrectionOperationTypes $operationType
-	 * @param Company $company
-	 * @param CorrectionInfo $correctionInfo
-	 * @param Payment $payment
-	 * @param Vat $vat
-	 * @param Item[] $items
-	 */
-	public function __construct(CorrectionOperationTypes $operationType, Company $company, CorrectionInfo $correctionInfo, Payment $payment, Vat $vat, $items)
+    /**
+     * Correction constructor.
+     * @param CorrectionOperationTypes $operationType
+     * @param Company $company
+     * @param CorrectionInfo $correctionInfo
+     * @param Payment $payment
+     * @param Item[] $items
+     */
+	public function __construct(CorrectionOperationTypes $operationType, Company $company, CorrectionInfo $correctionInfo, Payment $payment,  $items)
 	{
 		$this->operationType = $operationType->getValue();
 		$this->company = $company;
 		$this->correction_info = $correctionInfo;
 		$this->addPayment($payment);
-		$this->addVat($vat);
 		foreach ($items as $item) {
 			$this->addItem($item);
 		}
