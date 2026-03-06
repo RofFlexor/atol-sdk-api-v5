@@ -134,7 +134,7 @@ class Receipt extends BaseDataObject
 			$params['payments'][] = $payment->getParameters();
 		}
 
-		$params['total'] = (double)$this->getItemsAmount();
+		$params['total'] = number_format($this->getItemsAmount(), 2, '.', '');;
 
 		if (!empty($this->additionalCheckProps)) {
 			$params['additional_check_props'] = $this->additionalCheckProps;
